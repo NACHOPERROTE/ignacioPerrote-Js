@@ -31,7 +31,10 @@
 
 
 
-//TRABAJO 2
+
+
+
+
 
 
 
@@ -46,6 +49,9 @@ if (sku == 120) {
 } else{
     alert("PRODUCTO NO ENCONTRADO")
 }
+
+console.log("El sku de tu producto es: " + sku)
+
 
 
 class Producto{
@@ -62,18 +68,6 @@ class Producto{
         return this.precio *1.21
 
     }
-    
-    infoProducto() { 
-            if(this.sku==120){
-                alert(producto1)
-            } else if(this.sku==240){
-                alert(producto2)
-            } else if(this.sku==320){
-                alert(producto3)
-            }
-            
-    }
-
 }
 
 const producto1= new Producto(120, "Lavarropas", 5, 65000)
@@ -82,12 +76,5 @@ const producto3= new Producto(320, "Heladera", 5, 85000)
 
 
 console.log(producto1)
-console.log(producto2)
-console.log(producto3)
-console.log( "El precio final es: " + sku.calcularIva() )
-
-
-
-
-
-
+console.log(producto1)
+console.log( "El precio final de su producto es: " + producto1.calcularIva() )
