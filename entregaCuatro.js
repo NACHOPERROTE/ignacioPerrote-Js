@@ -25,6 +25,7 @@ btn1.addEventListener('click', () => {
 
 btn2.addEventListener('click', () => {
     const result2 = random(0,11)
+    
     aparicionUno.innerHTML = result2
 })
 
