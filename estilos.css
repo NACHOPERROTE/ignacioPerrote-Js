@@ -1,0 +1,41 @@
+.juego{
+    background-color: #E59500;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.col-lg-4{
+    background-color: #002642;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0.3rem;
+    width: 20rem;
+    height: 25rem;
+    padding: 1rem;
+    border: 0.3rem solid #840032;
+}   
+
+
+
+.numeros__tituloGeneral{
+    text-align: center;
+    margin: 1rem;
+    color: #02040F;
+}
+
+.numeros__titulo--h2{
+    color: #E5DADA;
+}
+
+.numero{
+    font-size: 10rem;
+    color: white;
+}
