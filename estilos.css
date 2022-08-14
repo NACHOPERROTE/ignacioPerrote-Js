@@ -1,17 +1,21 @@
 .juego{
-    background-color: #E59500;
+    background-image: url(/pexels-photo-3021120.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .row{
     display: flex;
     justify-content: space-around;
+    align-content: center;
     
 }
 
 
 
 .col-lg-4{
-    background-color: #002642;
+    background-color: #ffffff84;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,13 +33,36 @@
     text-align: center;
     margin: 1rem;
     color: #02040F;
+    background-color: rgba(255, 255, 255, 0.361);
+    border: 0.3rem solid #840032;
 }
 
 .numeros__titulo--h2{
-    color: #E5DADA;
+    color: #002642;
 }
 
 .numero{
     font-size: 10rem;
+    color: #002642;
+}
+
+.numeros__tirar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numeros__fila1{
+    margin-top: 5rem;
+}
+
+
+.numeros__fila2{
+    margin-top: 5rem;
+}
+
+.numeros__mensaje{
+    margin-top: 2rem;
     color: white;
 }
