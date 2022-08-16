@@ -1,4 +1,6 @@
-const btnStar = document.querySelector('#btnStart')        
+const btnStar = document.querySelector('#btnStart')     
+const cerrarModal = document.querySelector('#numeros__cerrarModal')   
+const modalContainer = document.querySelector('#message')
         
         function getRandomNumber(min,max) {
             return Math.floor(Math.random() * (max - min) + min);
@@ -28,14 +30,17 @@ const btnStar = document.querySelector('#btnStart')
     
 
         function mostrarMensaje() {
-            const msg = document.getElementById("message");
-            msg.style.display = "block";
+            const msg = document.querySelector("#message");
+            msg.classList.add("numeros__modalCajaActivado")
             
         }
 
         function ocultarMensaje() {
-            const msg = document.getElementById("message");
-            msg.style.display = "none";
+            const msg = document.querySelector("#message");
+            msg.classList.remove("numeros__modalCajaActivado")
         }
    
-        
+
+cerrarModal.addEventListener('click', () => {
+    modalContainer.classList.remove('numeros__modalCajaActivado')
+})
