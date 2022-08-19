@@ -6,6 +6,10 @@ const modalContainer = document.querySelector('#message')
             return Math.floor(Math.random() * (max - min) + min);
         }
 
+        let resultado = []
+        console.log(resultado);
+        const almacenar = localStorage.getItem('resultado')
+
 
         btnStar.addEventListener('click', () => {
             const item1 = document.getElementById('item1');
@@ -22,24 +26,53 @@ const modalContainer = document.querySelector('#message')
 
             if (num1 === num2 && num1 === num3) {
                 mostrarMensaje();
+                class numFinal {
+                    constructor(id){
+                      this.id = id;
+                      }
+                  }
+                  
+                  resultado.push(new numFinal(`${num1}${num2}${num3}`));
+                  console.log(resultado);
+                  localStorage.setItem('resultado' , almacenar)
+                  
             } else {
                 ocultarMensaje();
             }
         })
 
-    
+       
+        
+        
+
+
+        // let arr = []
+
+        // function identidad(numItems){
+        //         for (let i = 0; i < numItems; i++) {
+        //             arr.push({
+        //                 id: "",
+        //             });
+        //         }
+        //         return arr;
+        //     }
+        //     x =  new identidad(10);
+        //     x[0].id = `${num1}${num2}${num3}`;
+        //     console.log(x);
+
+
+
 
         function mostrarMensaje() {
             const msg = document.querySelector("#message");
             msg.classList.add("numeros__modalCajaActivado")
-            
         }
 
         function ocultarMensaje() {
             const msg = document.querySelector("#message");
             msg.classList.remove("numeros__modalCajaActivado")
         }
-   
+
 
 cerrarModal.addEventListener('click', () => {
     modalContainer.classList.remove('numeros__modalCajaActivado')
