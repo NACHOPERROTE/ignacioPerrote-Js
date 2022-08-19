@@ -46,17 +46,17 @@ const modalContainer = document.querySelector('#message')
         
 
 
-        // let arr = []
+        // let acumulado = []
 
-        // function identidad(numItems){
+        // function variantes(numItems){
         //         for (let i = 0; i < numItems; i++) {
-        //             arr.push({
+        //             acumulado.push({
         //                 id: "",
         //             });
         //         }
-        //         return arr;
+        //         return acumulado;
         //     }
-        //     x =  new identidad(10);
+        //     x =  new variantes(10);
         //     x[0].id = `${num1}${num2}${num3}`;
         //     console.log(x);
 
